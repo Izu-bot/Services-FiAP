@@ -16,7 +16,7 @@ public class ColetaLixo {
 
     @Id
     @Column(name = "numero_lixeira")
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long numeroLixeira;
 
     String endereco;
@@ -25,9 +25,11 @@ public class ColetaLixo {
     LocalDate dataColeta;
 
     @Column(name = "lixeira_cheia")
+    @Enumerated(EnumType.STRING)
     Coletando lixeiraCheia;
 
     @Column(name = "processo_coleta")
+    @Enumerated(EnumType.STRING)
     Coletando processoColeta;
 
 }
