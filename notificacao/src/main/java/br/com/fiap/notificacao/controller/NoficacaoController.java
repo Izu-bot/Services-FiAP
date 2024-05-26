@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("notificacao")
+@RequestMapping("/notificacao")
 public class NoficacaoController {
 
     @Autowired
@@ -41,7 +41,7 @@ public class NoficacaoController {
         service.deletar(id);
     }
 
-    @PutMapping("/atualizar/{id}")
+    @PutMapping("/atualizar")
     @ResponseStatus(HttpStatus.OK)
     public ExibicaoDto atualizar(@RequestBody CadastroDto cadastroDto){
         return service.atualizar(cadastroDto);
