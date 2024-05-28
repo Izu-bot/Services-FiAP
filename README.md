@@ -10,4 +10,3 @@ O projeto consiste em vários microsserviços, cada um responsável por uma part
 * Serviço Coleta de lixo: Serviço que gerencia a coleta de lixo na vizinhança;
 * Serviço Rastreio de caminhões: Serviço que gerencia os caminhões de lixo;
 * Serviço Notificação: Notifica os moradoes de quando é necessario separa os lixos reciclveis para coleta;
-
