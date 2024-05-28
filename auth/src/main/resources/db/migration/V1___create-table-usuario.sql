@@ -1,0 +1,7 @@
+CREATE TABLE tbl_usuario(
+    id INTEGER NOT NULL AUTO_INCREMENT,
+    email VARCHAR(50) UNIQUE NOT NULL,
+    senha VARCHAR(100) NOT NULL,
+    role VARCHAR(10) DEFAULT 'user',
+    PRIMARY KEY (id)
+);
